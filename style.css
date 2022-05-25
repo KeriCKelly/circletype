@@ -1,5 +1,78 @@
-/* CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 
 body {
-    background: greenyellow;
+  margin: auto;
+}
+
+.section {
+  max-width: 800px;
+  display: grid;
+  padding: 10vmin;
+  margin: auto;
+  grid-template-rows: 12;
+  grid-template-columns: 12;
+}
+
+h1 {
+  grid-column: 1 / 12;
+  grid-row: 1 / 12;
+  font-family: 'Old Standard TT', serif;
+  font-size: 3vmin;
+  color: black;
+  animation: rotation 50s;
+  animation-iteration-count: infinite;
+}
+
+h2 {
+  margin: auto;
+  max-width: 800px;
+  font-family: 'Old Standard TT', serif;
+  font-size: 5vmin;
+  color: ivory;
+}
+
+p {
+  margin: auto;
+  padding: 2em;
+  color: ivory;
+  font-family: sans-serif;
+  max-width: 800px;
+}
+
+.reader {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  padding: 10vmin;
+  background: #002c50;
+}
+
+button {
+  width: 15em;
+  padding: 2em;
+  margin: auto;
+  background: goldenrod;
+  border: none;
+  font-family: sans-serif;
+  color: #002c50;
+}
+
+button:hover {
+  background: #ac8117;
+  color: ivory;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+.fairy {
+  z-index: 1;
+  grid-column: 5 / span 6;
+  grid-row: 4 / span 9;
 }
